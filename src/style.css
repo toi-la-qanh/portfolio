@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Classique Saigon';
+    src: url('./assets/fonts/Classique-Saigon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+@import "tailwindcss";
+
+@theme {
+    --font-saigon: 'Classique Saigon', sans-serif;
+  }
+  
