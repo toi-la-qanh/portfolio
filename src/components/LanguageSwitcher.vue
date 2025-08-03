@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed top-0 right-0 z-100">
+    <div class="fixed top-4 sm:top-0 right-0 z-100">
         <select :key="locale" v-model="locale" @change="changeLanguage">
             <option value="en">English</option>
             <option value="vi">Tiếng Việt</option>

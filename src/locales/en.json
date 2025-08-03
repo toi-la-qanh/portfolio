@@ -1,1 +1,113 @@
-{}
+{
+  "home": {
+    "menu": {
+      "title": "Menu",
+      "home": "Home",
+      "education": "Education",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
+      "resume": "Resume"
+    },
+    "greeting": "Hello, I'm",
+    "name": "Quoc Anh Nguyen",
+    "job": "Backend Developer",
+    "description": "From databases to APIs, I specialize in the backend magic that drives user experiences.",
+    "viewProjects": "View My Work",
+    "downloadCV": "Download CV"
+  },
+  "education": {
+    "title": "Education",
+    "university": {
+      "major": "Computer Networks & Communications",
+      "name": "HCM University of Transport",
+      "diploma": "Bachelor's Degree"
+    },
+    "highSchool": {
+      "major": "Computer Science Gifted Class",
+      "name": "Hoang Le Kha High School for the Gifted",
+      "diploma": "High School Diploma"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "toeic": "TOEIC Certificate - 700 Points",
+      "english": "English Proficiency",
+      "professionalCommunication": "Professional Communication"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "backendDevelopment": {
+      "title": "Backend Development",
+      "description": "Backend Development"
+    },
+    "databaseAndTools": {
+      "title": "Database & Tools",
+      "description": "Database & Tools"
+    },
+    "additionalSkills": {
+      "title": "Additional Skills",
+      "description": "Additional Skills"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "professionalJourney": "Professional journey in software development",
+    "totalWorkExperience": "Total Work Experience",
+    "monthsExperience": "Months",
+    "companies": "Companies",
+    "current": "Current",
+    "activePosition": "Active Position",
+    "outlier": {
+      "title": "Outlier",
+      "work": {
+        "title": "Coding Expertise for AI Training",
+        "description_1": "Utilized Reinforcement Learning from Human Feedback (RLHF) techniques to enhance machine learning model training, resulting in more efficient learning and improved model performance.",
+        "description_2": "Evaluated AI-generated responses, including JavaScript code, across key criteria (instructions, localization, truthfulness, etc.) to ensure accuracy, code executability, and adherence to prompt requirements, while improving fluency and style."
+      },
+      "date": "December 2024 - Current"
+    },
+    "altaSoftware": {
+      "title": "Alta Software",
+      "work": {
+        "title": "Intern PHP Developer",
+        "description_1": "Performed thorough code reviews and debugging, identifying and resolving issues to ensure the stability and performance of the application during the migration process.",
+        "description_2": "Actively pursued continuous learning and development, keeping up-to-date with the latest Laravel updates and best practices to implement innovative solutions and improve existing functionalities."
+      },
+      "date": "November 2024 - January 2025"
+    },
+    "keyTechnologies": {
+      "title": "Key Technologies & Skills",
+      "aiMlTraining": "AI/ML Training",
+      "debugging": "Debugging",
+      "codeReview": "Code Review"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "madVillageGame": {
+      "title": "Mad Village Game",
+      "description_1": "Online Board Game",
+      "description_2": "Developed and deployed a scalable online board game supporting up to 1,000 concurrent players using Express.js for backend and Vue.js for building a responsive, dynamic frontend."
+    },
+    "threadPages": {
+      "title": "Thread Pages",
+      "description_1": "Social Media Pages",
+      "description_2": "Built a dynamic social media platform centered around user interactions with short posts, delivering a fast, responsive, and interactive interface using ReactJS library."
+    },
+    "onlineCourses": {
+      "title": "Online Courses Platform",
+      "description_1": "Online Courses Platform",
+      "description_2": "Developed a comprehensive online learning platform for programming courses with support for manual transfers and future payment gateway integrations."
+    },
+    "projectsCompleted": "Projects Completed",
+    "concurrentUsers": "Concurrent Users",
+    "githubOpenSource": "GitHub Open Source",
+    "otherProjects": "Other Projects",
+    "viewAllProjects": "View All Projects on GitHub"
+  },
+  "resume": {
+    "title": "Resume",
+    "download": "Download Resume (PDF)"
+  }
+}

@@ -11,7 +11,7 @@
             <!-- Section Title -->
             <div class="text-center mb-16">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">
-                    Work Experience
+                    {{$t('experience.title')}}
                 </h1>
                 <div class="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full"></div>
             </div>
@@ -20,8 +20,8 @@
             <div class="max-w-4xl mx-auto mb-12">
                 <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                     <div class="text-center mb-6">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Total Work Experience</h2>
-                        <p class="text-blue-200">Professional journey in software development</p>
+                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">{{$t('experience.totalWorkExperience')}}</h2>
+                        <p class="text-blue-200">{{$t('experience.professionalJourney')}}</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="text-center">
@@ -31,7 +31,7 @@
                                 </svg>
                             </div>
                             <div class="text-2xl md:text-3xl font-bold text-cyan-300 mb-1">3+</div>
-                            <div class="text-blue-200 text-sm">Months Experience</div>
+                            <div class="text-blue-200 text-sm">{{$t('experience.monthsExperience')}}</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-3">
@@ -40,7 +40,7 @@
                                 </svg>
                             </div>
                             <div class="text-2xl md:text-3xl font-bold text-blue-300 mb-1">2</div>
-                            <div class="text-blue-200 text-sm">Companies</div>
+                            <div class="text-blue-200 text-sm">{{$t('experience.companies')}}</div>
                         </div>
                         <div class="text-center">
                             <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-3">
@@ -48,8 +48,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                                 </svg>
                             </div>
-                            <div class="text-2xl md:text-3xl font-bold text-indigo-300 mb-1">Current</div>
-                            <div class="text-blue-200 text-sm">Active Position</div>
+                            <div class="text-2xl md:text-3xl font-bold text-indigo-300 mb-1">{{$t('experience.current')}}</div>
+                            <div class="text-blue-200 text-sm">{{$t('experience.activePosition')}}</div>
                         </div>
                     </div>
                 </div>
@@ -67,13 +67,18 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl md:text-2xl font-bold text-white">Outlier Freelance</h3>
-                                <p class="text-cyan-300 text-base md:text-lg">Coding Expertise for AI Training</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-white">{{$t('experience.outlier.title')}}</h3>
+                                <p class="text-cyan-300 text-base md:text-lg">{{$t('experience.outlier.work.title')}}</p>
+                                <div class="flex items-center mt-2 space-x-3">
+                                    <span class="inline-block bg-cyan-400/20 text-cyan-300 px-2 py-1 rounded-full text-xs font-medium">
+                                        Freelance
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="text-left md:text-right">
                             <span class="inline-block bg-cyan-400/20 text-cyan-300 px-3 md:px-4 py-2 rounded-full text-sm font-medium">
-                                December 2024 - Current
+                                {{$t('experience.outlier.date')}}
                             </span>
                         </div>
                     </div>
@@ -81,13 +86,13 @@
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                             <p class="text-blue-200 leading-relaxed text-sm md:text-base">
-                                Utilized <span class="text-cyan-300 font-medium">Reinforcement Learning from Human Feedback (RLHF)</span> techniques to enhance machine learning model training, resulting in more efficient learning and improved model performance.
+                                {{$t('experience.outlier.work.description_1')}}
                             </p>
                         </div>
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                             <p class="text-blue-200 leading-relaxed text-sm md:text-base">
-                                Evaluated <span class="text-cyan-300 font-medium">AI-generated responses</span>, including JavaScript code, across key criteria (instructions, localization, truthfulness, etc.) to ensure accuracy, code executability, and adherence to prompt requirements, while improving fluency and style.
+                                {{$t('experience.outlier.work.description_2')}}
                             </p>
                         </div>
                     </div>
@@ -103,13 +108,21 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl md:text-2xl font-bold text-white">Alta Software</h3>
-                                <p class="text-cyan-300 text-base md:text-lg">Intern PHP Developer</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-white">{{$t('experience.altaSoftware.title')}}</h3>
+                                <p class="text-cyan-300 text-base md:text-lg">{{$t('experience.altaSoftware.work.title')}}</p>
+                                <div class="flex items-center mt-2 space-x-3">
+                                    <span class="inline-block bg-green-400/20 text-green-300 px-2 py-1 rounded-full text-xs font-medium">
+                                        Remote
+                                    </span>
+                                    <span class="inline-block bg-blue-400/20 text-blue-300 px-2 py-1 rounded-full text-xs font-medium">
+                                        Internship
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="text-left md:text-right">
                             <span class="inline-block bg-blue-400/20 text-blue-300 px-3 md:px-4 py-2 rounded-full text-sm font-medium">
-                                November 2024 - January 2025
+                                {{$t('experience.altaSoftware.date')}}
                             </span>
                         </div>
                     </div>
@@ -117,13 +130,13 @@
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                             <p class="text-blue-200 leading-relaxed text-sm md:text-base">
-                                Performed thorough <span class="text-cyan-300 font-medium">code reviews and debugging</span>, identifying and resolving issues to ensure the stability and performance of the application during the migration process.
+                                {{$t('experience.altaSoftware.work.description_1')}}
                             </p>
                         </div>
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                             <p class="text-blue-200 leading-relaxed text-sm md:text-base">
-                                Actively pursued <span class="text-cyan-300 font-medium">continuous learning and development</span>, keeping up-to-date with the latest Laravel updates and best practices to implement innovative solutions and improve existing functionalities.
+                                {{$t('experience.altaSoftware.work.description_2')}}
                             </p>
                         </div>
                     </div>
@@ -132,13 +145,13 @@
                 <!-- Skills Highlight -->
                 <div class="bg-gradient-to-r from-cyan-400/10 to-blue-500/10 backdrop-blur-sm rounded-2xl p-6 border border-cyan-400/20">
                     <div class="text-center">
-                        <h3 class="text-lg md:text-xl font-bold text-white mb-3">Key Technologies & Skills</h3>
+                        <h3 class="text-lg md:text-xl font-bold text-white mb-3">{{$t('experience.keyTechnologies.title')}}</h3>
                         <div class="flex flex-wrap justify-center gap-2 md:gap-3">
-                            <span class="bg-cyan-400/20 text-cyan-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">AI/ML Training</span>
-                            <span class="bg-blue-400/20 text-blue-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">JavaScript</span>
+                            <span class="bg-cyan-400/20 text-cyan-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">{{$t('experience.keyTechnologies.aiMlTraining')}}</span>
+                            <span class="bg-blue-400/20 text-blue-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Javascript</span>
                             <span class="bg-indigo-400/20 text-indigo-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">PHP/Laravel</span>
-                            <span class="bg-purple-400/20 text-purple-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Code Review</span>
-                            <span class="bg-pink-400/20 text-pink-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Debugging</span>
+                            <span class="bg-purple-400/20 text-purple-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">{{$t('experience.keyTechnologies.debugging')}}</span>
+                            <span class="bg-pink-400/20 text-pink-300 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">{{$t('experience.keyTechnologies.codeReview')}}</span>
                         </div>
                     </div>
                 </div>

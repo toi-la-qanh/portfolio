@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-full bg-gradient-to-br from-indigo-900 via-blue-900 to-cyan-900 relative overflow-hidden" id="skills">
+    <div class="w-full min-h-screen bg-gradient-to-br from-indigo-900 via-blue-900 to-cyan-900 relative overflow-hidden" id="skills">
         <!-- Background Elements -->
         <div class="absolute inset-0">
             <div class="absolute top-20 right-20 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse"></div>
@@ -7,91 +7,91 @@
         </div>
 
         <!-- Main Content -->
-        <div class="relative z-10 py-20 px-6">
+        <div class="relative z-10 py-12 sm:py-16 md:py-20 px-4 sm:px-6">
             <!-- Section Title -->
-            <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">
-                    Skills & Expertise
+            <div class="text-center mb-8 sm:mb-12 md:mb-16">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 animate-fade-in">
+                    {{$t('skills.title')}}
                 </h1>
-                <div class="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full"></div>
+                <div class="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full"></div>
             </div>
 
             <!-- Skills Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
                 <!-- Backend Development -->
-                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:scale-105">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-xl flex items-center justify-center mr-4">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:scale-105">
+                    <div class="flex items-center mb-4 sm:mb-6">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-xl flex items-center justify-center mr-3 sm:mr-4">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-white">Backend Development</h3>
-                            <p class="text-cyan-300">Server & API Development</p>
+                            <h3 class="text-lg sm:text-xl font-bold text-white">{{$t('skills.backendDevelopment.title')}}</h3>
+                            <p class="text-cyan-300 text-sm sm:text-base">{{$t('skills.backendDevelopment.description')}}</p>
                         </div>
                     </div>
-                    <div class="space-y-3">
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">Node.js</span>
+                    <div class="space-y-2 sm:space-y-3">
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">Node.js</span>
                         </div>
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">Express.js</span>
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">Express.js</span>
                         </div>
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">Socket.IO</span>
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">Socket.IO</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Database & Tools -->
-                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:scale-105">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:scale-105">
+                    <div class="flex items-center mb-4 sm:mb-6">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-3 sm:mr-4">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-white">Database & Tools</h3>
-                            <p class="text-cyan-300">Data Management</p>
+                            <h3 class="text-lg sm:text-xl font-bold text-white">{{$t('skills.databaseAndTools.title')}}</h3>
+                            <p class="text-cyan-300 text-sm sm:text-base">{{$t('skills.databaseAndTools.description')}}</p>
                         </div>
                     </div>
-                    <div class="space-y-3">
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">MongoDB</span>
+                    <div class="space-y-2 sm:space-y-3">
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">MongoDB</span>
                         </div>
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">RESTful APIs</span>
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">RESTful APIs</span>
                         </div>
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">PostgreSQL</span>
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">PostgreSQL</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Additional Skills -->
-                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:scale-105">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-white/20 hover:bg-white/20 transition-all duration-500 transform hover:scale-105">
+                    <div class="flex items-center mb-4 sm:mb-6">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mr-3 sm:mr-4">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-white">Additional Skills</h3>
-                            <p class="text-cyan-300">Backend Technologies</p>
+                            <h3 class="text-lg sm:text-xl font-bold text-white">{{$t('skills.additionalSkills.title')}}</h3>
+                            <p class="text-cyan-300 text-sm sm:text-base">{{$t('skills.additionalSkills.description')}}</p>
                         </div>
                     </div>
-                    <div class="space-y-3">
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">PHP</span>
+                    <div class="space-y-2 sm:space-y-3">
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">PHP</span>
                         </div>
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">Git Control</span>
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">Git Control</span>
                         </div>
-                        <div class="skill-item bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-all duration-300">
-                            <span class="text-blue-200 font-medium">Unit Test</span>
+                        <div class="skill-item bg-white/5 rounded-lg p-2 sm:p-3 hover:bg-white/10 transition-all duration-300">
+                            <span class="text-blue-200 font-medium text-sm sm:text-base">Unit Test</span>
                         </div>
                     </div>
                 </div>

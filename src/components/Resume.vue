@@ -7,33 +7,33 @@
         </div>
 
         <!-- Main Content -->
-        <div class="relative z-10 py-20 px-6">
+        <div class="relative z-10 py-12 sm:py-16 md:py-20 px-4 sm:px-6">
             <!-- Section Title -->
-            <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">
-                    Resume
+            <div class="text-center mb-8 sm:mb-12 md:mb-16">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 animate-fade-in">
+                    {{$t('resume.title')}}
                 </h1>
-                <div class="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full"></div>
+                <div class="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full"></div>
             </div>
 
             <!-- Resume Content -->
             <div class="max-w-6xl mx-auto">
                 <!-- Download Button -->
-                <div class="text-center mb-8">
-                    <a href="/src/assets/QuocAnhNguyen_Backend.pdf" target="_blank" download class="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="text-center mb-6 sm:mb-8">
+                    <a href="/portfolio/QuocAnhNguyen_Backend.pdf" target="_blank" download class="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
-                        Download Resume (PDF)
+                        {{$t('resume.download')}}
                     </a>
                 </div>
 
                 <!-- Resume Display -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-white/20">
                     <div class="bg-white rounded-lg shadow-2xl overflow-hidden">
                         <iframe 
-                            src="/src/assets/QuocAnhNguyen_Backend.pdf" 
-                            class="w-full h-[800px] md:h-[1000px]"
+                            src="/portfolio/QuocAnhNguyen_Backend.pdf" 
+                            class="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[800px] xl:h-[1000px]"
                             title="Resume PDF"
                         ></iframe>
                     </div>

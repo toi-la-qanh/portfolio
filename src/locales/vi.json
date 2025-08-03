@@ -1,1 +1,113 @@
-{}
+{
+  "home": {
+    "menu": {
+      "title": "Danh mục",
+      "home": "Trang chủ",
+      "education": "Học vấn",
+      "skills": "Kỹ năng",
+      "experience": "Kinh nghiệm",
+      "projects": "Dự án",
+      "resume": "Hồ sơ"
+    },
+    "greeting": "Xin chào, tôi là",
+    "name": "Nguyễn Quốc Anh",
+    "job": "Backend Developer",
+    "description": "Từ cơ sở dữ liệu đến API, tôi chuyên về backend – phần không thấy nhưng cực kỳ quan trọng.",
+    "viewProjects": "Xem dự án",
+    "downloadCV": "Tải CV"
+  },
+  "education": {
+    "title": "Học vấn",
+    "university": {
+      "major": "Mạng máy tính và truyền thông dữ liệu",
+      "name": "Trường Đại học giao thông vận tải",
+      "diploma": "Bằng cử nhân"
+    },
+    "highSchool": {
+      "major": "Lớp chuyên Tin",
+      "name": "Trường THPT chuyên Hoàng Lê Kha",
+      "diploma": "Bằng THPT"
+    },
+    "certifications": {
+      "title": "Chứng chỉ",
+      "toeic": "Chứng chỉ TOEIC - 700 điểm",
+      "english": "Tiếng Anh lưu loát",
+      "professionalCommunication": "Nghiệp vụ tiếng Anh"
+    }
+  },
+  "skills": {
+    "title": "Kỹ năng",
+    "backendDevelopment": {
+      "title": "Lập trình backend",
+      "description": "Lập trình server và API"
+    },
+    "databaseAndTools": {
+      "title": "Cơ sở dữ liệu và công cụ",
+      "description": "Quản lý dữ liệu"
+    },
+    "additionalSkills": {
+      "title": "Kỹ năng bổ sung",
+      "description": "Kỹ năng lập trình backend"
+    }
+  },
+  "experience": {
+    "title": "Kinh nghiệm",
+    "professionalJourney": "Quá trình làm việc trong ngành công nghệ thông tin",
+    "totalWorkExperience": "Tổng số tháng kinh nghiệm",
+    "monthsExperience": "Tháng",
+    "companies": "Công ty",
+    "current": "Hiện tại",
+    "activePosition": "Vị trí hiện tại",
+    "outlier": {
+      "title": "Outlier",
+      "work": {
+        "title": "Chuyên viên huấn luyện AI",
+        "description_1": "Sử dụng mô hình học lại từ đánh giá của người dùng (RLHF) để cải thiện việc huấn luyện mô hình học máy, mô hình học tập hiệu quả hơn và cải thiện hiệu suất mô hình.",
+        "description_2": "Đánh giá các phản hồi AI tạo ra, bao gồm mã JavaScript, trên các tiêu chí chính (hướng dẫn, ngôn ngữ địa phương, tính chân thực, v.v.), để đảm bảo độ chính xác, khả năng thực thi và tuân thủ các yêu cầu của prompt, đồng thời cải thiện độ lưu loát và phong cách của phản hồi."
+      },
+      "date": "Tháng 12/2024 - Hiện tại"
+    },
+    "altaSoftware": {
+      "title": "Alta Software",
+      "work": {
+        "title": "Thực tập PHP",
+        "description_1": "Thực hiện đánh giá mã, phát hiện và giải quyết các vấn đề để đảm bảo tính ổn định và hiệu suất của ứng dụng trong quá trình chuyển đổi.",
+        "description_2": "Tìm kiếm và áp dụng các giải pháp mới nhất về Laravel để cải thiện tính năng và tối ưu hóa hiệu suất của ứng dụng."
+      },
+      "date": "Tháng 11/2024 - Tháng 01/2025"
+    },
+    "keyTechnologies": {
+      "title": "Công nghệ chính",
+      "aiMlTraining": "Huấn luyện AI/ML",
+      "debugging": "Sửa lỗi",
+      "codeReview": "Đánh giá mã"
+    }
+  },
+  "projects": {
+    "title": "Dự án",
+    "madVillageGame": {
+      "title": "Làng Điên",
+      "description_1": "Trò chơi dạng bàn cờ",
+      "description_2": "Phát triển và triển khai trò chơi bảng trực tuyến có khả năng mở rộng, hỗ trợ tối đa 1,000 người chơi cùng lúc bằng Express.js cho backend và Vue.js cho frontend để xây dựng giao diện đáp ứng, động và tương tác."
+    },
+    "threadPages": {
+      "title": "Thread",
+      "description_1": "Trang mạng xã hội",
+      "description_2": "Xây dựng một nền tảng  mạng xã hội cho phép người dùng tương tác với các bài đăng ngắn. Sử dụng Laravel cho backend để quản lý các API và tương tác cơ sở dữ liệu với PostgreSQL bằng cách sử dụng ORM. Tích hợp RESTful API để  xử lý dữ liệu hiệu quả và cho phép cập nhật thời gian thực cho nguồn cấp dữ liệu người dùng, tối ưu hóa hiệu suất và quản lý người dùng."
+    },
+    "onlineCourses": {
+      "title": "Website bán khóa học",
+      "description_1": "Website bán khóa học",
+      "description_2": "Phát triển một nền tảng học tập trực tuyến toàn diện cho các khóa học lập trình, hỗ trợ chuyển khoản thủ công (dự kiến tích hợp các cổng thanh toán bổ sung trong tương lai). Xây dựng một hệ thống thông báo thời gian thực bằng cách sử dụng jQuery để thông báo cho người dùng."
+    },
+    "projectsCompleted": "Dự án hoàn thành",
+    "concurrentUsers": "Người dùng đồng thời",
+    "githubOpenSource": "Mã nguồn mở GitHub",
+    "otherProjects": "Về các dự án khác",
+    "viewAllProjects": "Xem tất cả dự án trên GitHub"
+  },
+  "resume": {
+    "title": "Hồ sơ",
+    "download": "Tải hồ sơ (PDF)"
+  }
+}
